@@ -1,0 +1,39 @@
+/*asterisk wildcard selector  to override default styles added  by the browser*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*General Styles and Grid structure for website page*/
+body{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows:1fr 4fr 1fr ;
+    grid-template-areas: "header  header"
+                          "sidebar  main"
+                          "footer  footer" 
+}
+/*Header*/
+header{
+    grid-area: header;
+    background-color: green;
+     height: 100px;
+}
+/*Main Section*/
+main{
+    grid-area: main;
+    background-color: yellow;
+    
+}
+/*Sidebar Section*/
+sidebar{
+    grid-area: sidebar;
+    background-color: lightblue;
+    
+}
+/*Footer Section*/
+footer{
+    grid-area: footer;
+    background-color: rgb(255, 0, 191);
+    
+}
