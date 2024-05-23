@@ -19,14 +19,80 @@ body {
 /*Header*/
 header {
     grid-area: header;
-    
     height: 100px;
+    background-color: rgb(20, 35, 243);
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+}
+    
+#div-headerA{
+    border: 1px solid gray;
+}
+#div-headerB{
+    border: 1px solid gray;
+}
+
+#profile-pic {
+    height: 100px;
+width: 70px;
+}
+
+#Bio-Button {
+    width: 40px;
+    font-family: "F Normal", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    background-color: transparent;
+    color: rgb(228, 224, 224);
+    border: none;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+#Bio-Button:hover {
+    color: rgb(112, 5, 252);
+}
+
+#Music-Button {
+    font-family: "F Normal", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    background-color: transparent;
+    color: rgb(228, 224, 224);
+    border: none;
+    margin-top: 10%;
+    width: 65px;
+    cursor: pointer;
+}
+
+#Music-Button:hover {
+    color: rgb(112, 5, 252);
+}
+
+#UpcomingGigs-Button {
+    font-family: "F Normal", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    background-color: transparent;
+    color: rgb(228, 224, 224);
+    border: none;
+    margin-top: 10%;
+    width: 150px;
+    cursor: pointer;
+}
+
+#UpcomingGigs-Button:hover {
+    background-color: rgb(112, 5, 252);
 }
 
 /*Main Section*/
 main {
     grid-area: main;
-    
+    background-color: purple;
+
 
 }
 
@@ -40,15 +106,15 @@ main {
 }
 
 /*Sidebar Section*/
-sidebar {
+#sidebar {
     grid-area: sidebar;
-    
+background-color: aqua;
 
 }
 
 /*Footer Section*/
 footer {
     grid-area: footer;
-    
+background-color: rgb(255, 25, 25);
 
 }
