@@ -1,39 +1,54 @@
 /*asterisk wildcard selector  to override default styles added  by the browser*/
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 /*General Styles and Grid structure for website page*/
-body{
+body {
+    min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 10fr;
-    grid-template-rows:1fr 4fr 1fr ;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: 1fr 5fr 1fr;
     grid-template-areas: "header  header"
-                          "sidebar  main"
-                          "footer  footer" 
+        "sidebar  main"
+        "footer  footer"
 }
+
 /*Header*/
-header{
+header {
     grid-area: header;
-    background-color: green;
-     height: 100px;
+    
+    height: 100px;
 }
+
 /*Main Section*/
-main{
+main {
     grid-area: main;
-    background-color: yellow;
     
+
 }
+
+/*Background Pic of Eoin Miller playing drums*/
+#Main-pic {
+    background: url("../Images/MillerWebsiteThumbnails/Miller\ pic.2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1200px;
+    height: 495px;
+}
+
 /*Sidebar Section*/
-sidebar{
+sidebar {
     grid-area: sidebar;
-    background-color: lightblue;
     
+
 }
+
 /*Footer Section*/
-footer{
+footer {
     grid-area: footer;
-    background-color: rgb(255, 0, 191);
     
+
 }
