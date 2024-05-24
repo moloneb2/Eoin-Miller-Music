@@ -7,13 +7,18 @@
 
 /*General Styles and Grid structure for website page*/
 body {
-    min-height: 100vh;
+    height: 600px;
     display: grid;
     grid-template-columns: 1fr 9fr;
     grid-template-rows: 1fr 5fr 1fr;
     grid-template-areas: "header  header"
         "sidebar  main"
         "footer  footer"
+}
+/*Generic Border Styling*/
+#border{
+    border: 1px solid gray;
+
 }
 
 /*Header*/
@@ -53,32 +58,32 @@ nav {
     transition: 0.35s;
     box-shadow: 7px 7px 7px rgb(156, 154, 154);
 }
-
+/*Styling for Navagation Bar*/
 #Bio-Button {
     width: 40px;
     font-family: "F Normal", sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 400;
     line-height: 30px;
     background-color: transparent;
-    color: rgb(121, 118, 118);
+    color: rgb(207, 203, 203);
     border: none;
-
+    margin-top: 10px;
 
 }
 
 #Bio-Button:hover {
-    color: rgb(112, 5, 252);
+    color: rgb(241, 237, 237);
     cursor: pointer;
 }
 
 #Music-Button {
     font-family: "F Normal", sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 400;
     line-height: 30px;
-
-    color: rgb(121, 118, 118);
+    margin-top: 10px;
+    color: rgb(207, 203, 203);
     border: none;
     background-color: transparent;
     width: 65px;
@@ -86,24 +91,24 @@ nav {
 }
 
 #Music-Button:hover {
-    color: rgb(112, 5, 252);
+    color: rgb(241, 237, 237);
 }
 
 #UpcomingGigs-Button {
     font-family: "F Normal", sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 400;
     line-height: 30px;
     background-color: transparent;
-    color: rgb(121, 118, 118);
+    color: rgb(207, 203, 203);
     border: none;
-
-    width: 150px;
+    margin-top: 10px;
+    width: 180px;
     cursor: pointer;
 }
 
 #UpcomingGigs-Button:hover {
-    color: rgb(112, 5, 252);
+    color: rgb(241, 237, 237);
 }
 
 /*Main Section*/
@@ -111,19 +116,56 @@ main {
     grid-area: main;
     background-color: transparent;
 }
-.div-main{
+/*Styling for Eoin Miller Music - divs and text*/
+.div-main {
     display: grid;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 2fr 1fr;
+     
 }
-#div-main-child{
+
+#div-main-child {
     border: 1px solid gray;
-    height: 162px;
-    display: grid;
-    grid-template-columns: 5% auto auto;
+     height: 500px;
+
 }
-#div-main-child-a{
-    border: 1px solid gray;   
+
+#eoinmillermusic-div {
+    height: 190px;
+
+    bottom: 210px;
+    right: 290px;
+    position: absolute;
+    height: 200px;
+    width: 55%;
 }
+
+#eoinmiller-txt {
+    margin: 0px;
+
+    vertical-align: text-top;
+    font-size: 110px;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: azure;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+#eoinmillermusic-txt-1 {
+    margin: 0px;
+    vertical-align: bottom;
+    display: inline-block;
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    left: 560px;
+    bottom: 35px;
+    text-decoration: underline;
+    color: azure;
+}
+
 
 /*Background Pic of Eoin Miller playing drums*/
 #Main-pic {
@@ -137,13 +179,102 @@ main {
 /*Sidebar Section*/
 #sidebar {
     grid-area: sidebar;
-    background-color: bisque;
+    background-color: transparent;
 
 }
 
 /*Footer Section*/
 footer {
     grid-area: footer;
-    background-color: blueviolet;
-
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+ 
+/*Styling for Facebook,Twitter, Instagram, iTunes*/
+.facebookInstagram-div{
+ 
+    margin-top: 24px;
+    width: 450px;
+     float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .itunes-pic{
+    width: 50px;
+    border-radius: 5px;
+    height: 45px;  
+    cursor: pointer;
+  }
+  .itunes-pic:hover{
+    box-shadow: 5px 5px 10px  rgba(0,0,0,0.35);
+  }
+  .instagram-div{
+     
+    width: 60px;
+    height: 60px;
+     
+  }
+  .instagram-pic{
+    width: 45px;
+    border-radius: 5px;
+    height: 45px; 
+    cursor: pointer;
+  }
+  .instagram-pic:hover{
+    box-shadow: 5px 5px 10px  rgba(0,0,0,0.35);
+  }
+  .spotify-div{
+     
+    width: 55px;
+    height: 55px;
+  }
+  .spotify-pic{
+    width: 45px;
+    border-radius: 5px;
+    height: 45px; 
+    cursor: pointer;
+  }
+  .spotify-pic:hover{
+    box-shadow: 5px 5px 10px  rgba(0,0,0,0.35);
+  }
+  .youtube-div{
+     
+    width: 60px;
+    height: 60px;
+    margin-right: 0px;
+  }
+  .youtube-pic{
+    width: 55px;
+    border-radius: 5px;
+    height: 40px;  
+    cursor: pointer;
+  }
+  .youtube-pic:hover{
+    box-shadow: 5px 5px 10px  rgba(0,0,0,0.35);
+  }
+  .itunes-div{
+    width: 60px;
+    height: 60px;
+    margin-right: 0px;
+  
+  }
+  .facebook-div{
+    
+    width: 60px;
+    border-radius: 5px;
+    height: 60px;
+  }
+  .facebook-image{
+    width: 40px;
+    border-radius: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .facebook-image:hover{
+    transition: background-color 1s, color 1s;
+    box-shadow: 5px 5px 10px  rgba(0,0,0,0.35);
+  }
+  
